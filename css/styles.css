@@ -58,16 +58,19 @@
 
 /* Стилі заголовка  */
 
-  .logo-link{
+  .logo-header{
     padding-top: 24px;
-    padding-right: 93px;
     padding-bottom: 25px;
+    margin-right: 93px;
+    color: var(--title-text-color); 
+  }
 
+  .logo-link{  
+    display: inline-block;
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: var(--title-text-color); 
     text-decoration: none;
   } 
 
@@ -92,10 +95,11 @@
   }
   
    .site-nav>.list-link:not(:last-child){
-    padding-right: 50px;
+    margin-right: 50px;
   }
 
    .site-nav .link{
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -143,7 +147,9 @@
   }
 
   .title-button{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 216px;
     height: 50px;
     margin-right: auto;
@@ -154,8 +160,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
+    
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--secondary-text-color);
@@ -163,11 +168,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer; 
-  }
-
-  .text-button{
-    margin-right: auto;
-    margin-left: auto; 
   }
 
   .title-button:hover,
@@ -238,7 +238,9 @@
   }
 
   .list-team{
-    background:var(--primary-bg-color);  
+    background:var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;  
   }
 
   .list-team:not(:last-child){
@@ -246,8 +248,11 @@
     max-width: 270px;
   }
 
+  .list-name{
+    padding: 30px;
+  }
+
  .list-title-team{
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -257,16 +262,10 @@
 }
 
   .list-text-team{
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
   }
-
-.list-card{
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 
   /* Стилі Наші роботи Портфоліо  */
   .list-btn{
@@ -277,7 +276,7 @@
   }
 
   .list-btn-filter:not(:last-child){
-    padding-right: 8px;
+    margin-right: 8px;
   }
 
   .button{
@@ -349,18 +348,15 @@
   }
 
   /* Стилі футера  */
+
   .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--accent-background-color);
   }
 
-  .logo-link>.logo-text{
-    display: inline-block;
-    padding-top: 60px;
+  .logo-footer{
     margin-bottom: 20px;
-  }
-
- .list-address{
-  padding-bottom: 60px;
   }
 
   .logo-link>.logo-text,
@@ -370,6 +366,7 @@
   } 
 
   .link-address{
+    display:inline-block;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
